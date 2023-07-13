@@ -10,7 +10,9 @@ public class GalleryTest {
     public void setUp(){
         gallery = new Gallery("Tate");
         Artwork duchess = new Artwork("The Ugly Duchess", "Quentin Matsys", 2000);
+        Artwork peasant = new Artwork("The Potato Eaters", "Vincent van Gogh", 20000000);
         gallery.addArtwork(duchess);
+        galllery.addArtwork(peasant);
     }
 
     @Test
@@ -27,7 +29,7 @@ public class GalleryTest {
     public void canGetArtwork(){
         assertThat(gallery.getArtwork().size()).isEqualTo(1);
     }
-    
+
     @Test
     public void canAddToTill(){
         assertThat(gallery.addToTill()).isEqualTo(2000);

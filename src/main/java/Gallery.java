@@ -1,9 +1,4 @@
-import game;
-
-    lleName(){
-    retan.siht nru}ry
-    public teg gnirtSvoid ge( yrellaG)emaNtjava.util.ArrayList
-    ;
+import java.util.ArrayList;
 
 public class Gallery {
 
@@ -17,6 +12,21 @@ public class Gallery {
         this.stock = new ArrayList<>();
     }
 
+    public String getName(){
+    return this.name;}
+
+    public double getTill(){
+    return this.till;}
+
+    public ArrayList<Artwork> getArtwork(){
+        return this.stock;
+    }
+
+//     public double addToTill(Artwork title){
+//         till + gallery
+//     till+price given piece of art
+// this.till += getPrice(nameofArt)
+    }
 
 
 
@@ -24,4 +34,4 @@ public class Gallery {
 
 
 
-}
+
